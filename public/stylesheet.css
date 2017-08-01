@@ -95,9 +95,21 @@ body {
   padding-top: 70px;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 413px) {
   .h1-cust {
     font-size: 3em;
+  }
+  .row-extra {
+    height: 22%;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 480px) {
+  .h1-cust {
+    font-size: 3em;
+  }
+  .row-extra {
+    height: 35%;
   }
 }
 
