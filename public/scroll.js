@@ -1,4 +1,4 @@
-//jQuery to collapse the navbar on scroll
+// Collapse the navbar on scroll
 $(document)
   .ready(function () {
     /* affix the navbar after scroll below header */
@@ -9,7 +9,7 @@ $(document)
     });
   });
 
-//jQuery for page scrolling feature - requires jQuery Easing plugin
+// Page scrolling arrow
 $(function () {
   $(document)
     .on('click', 'a.page-scroll', function (event) {
