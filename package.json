@@ -1,0 +1,23 @@
+{
+  "name": "abc-creations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlkiung/ABC_Creations.git"
+  },
+  "author": "Meredith Kiung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlkiung/ABC_Creations/issues"
+  },
+  "homepage": "https://github.com/mlkiung/ABC_Creations#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "volleyball": "^1.4.1"
+  }
+}
