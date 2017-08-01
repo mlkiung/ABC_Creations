@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/mlkiung/ABC_Creations#readme",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "express": "^4.15.3",
+    "jquery": "^3.2.1",
     "volleyball": "^1.4.1"
   }
 }
