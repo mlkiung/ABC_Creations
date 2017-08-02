@@ -18,6 +18,7 @@
   "homepage": "https://github.com/mlkiung/ABC_Creations#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
     "express": "^4.15.3",
     "jquery": "^3.2.1",
     "jquery-easing": "0.0.1",
