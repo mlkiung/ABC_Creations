@@ -12,6 +12,7 @@ body {
   width: auto;
   background-image:
     linear-gradient(to bottom, rgba(0, 50, 50, 0.25), rgba(0, 40, 90, 0.80)),
+    linear-gradient(to bottom right, transparent, black),
     url('./images/image1.jpg');
   background-position:
     center center,
@@ -53,21 +54,59 @@ body {
 }
 
 #footer {
-  margin-top: 15vh;
+  margin-top: 30vh;
 }
 
-#second-img {
-  margin-top: 2vh;
+.transform, .on-bottom {
+  position: absolute;
+  float: left;
+  margin-left: 8em;
+}
+
+.transform {
+  z-index: 1;
+  height: 22em;
+  width: 55em;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+   transform:
+    rotate(-15deg)
+    skew(8deg, 0);
+  position: relative;
+  margin-left: 8em;
+  transform-origin: 70% 30%;
+}
+
+@keyframes shakeLeft {
+  from { transform: skew(25deg, -5deg); }
+  to { transform: skew(24deg, -6eg); }
+}
+
+ @keyframes shakeRight {
+  from { transform: skew(24deg, -6deg); }
+  to { transform: skew(25deg, -5deg); }
+}
+
+.transform:hover {
+  -webkit-animation-name: shakeLeft, shakeRight;
+  -webkit-animation-duration: 0.15s;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: shakeLeft, shakeRight;
+  animation-duration: 0.15s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+}
+
+.img-layer {
+   margin-top: 2em;
+   height: 100%;
 }
 
 #second-section {
   height: 100vh;
   width: 100vw;
   margin-top: 10em;
-}
-
-.second-section-header {
-  padding-top: 10em;
 }
 
 .glyphicon-arrow-down {
@@ -96,31 +135,21 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 413px) {
-  .h1-cust {
-    font-size: 3em;
-  }
-  .row-extra {
-    height: 22%;
-  }
+  .h1-cust { font-size: 3em; }
+  .row-extra { height: 22%; }
 }
 
 @media (min-width: 414px) and (max-width: 480px) {
-  .h1-cust {
-    font-size: 3em;
-  }
-  .row-extra {
-    height: 35%;
-  }
+  .h1-cust { font-size: 3em; }
+  .row-extra { height: 35%; }
 }
 
  @media (min-width: 481px) and (max-width: 768px) {
-  .h1-cust {
-    font-size: 4em;
-  }
+  .h1-cust { font-size: 4em; }
 }
 
 @media (min-width: 769px) {
-   .h1-cust {
-    font-size: 4em;
-  }
+   .h1-cust { font-size: 4em; }
+
+  #footer { margin-top: 60vh; }
 }
